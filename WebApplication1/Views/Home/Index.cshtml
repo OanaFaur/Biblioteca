@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Biblioteca</h1>
+    <p class="lead">Site-ul bibliotecii mele.</p>
+    @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Lista carti</h2>
+        <img src="/Content/Bookshelf.jpg" height="100" width="200">
+        <p>
+           Aici putem vedea cartile noastre.
+        </p>
+        @*comentariu*@
+        <p> @Html.ActionLink("Lista", "List", "Books")   </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Adauga carti</h2>
+        <p>Aici putem adauga carti.</p>
+        <p>@Html.ActionLink("Adauga", "Add", "Books")</p>
+    </div>
+    
+</div>
